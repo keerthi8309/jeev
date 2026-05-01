@@ -1,1 +1,51 @@
-rtsfcfrse
+
+1.1)name: Python Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Run test
+        run: python main.py
+
+
+3.2)git init
+echo "# My Git Repository" > README.md
+git add README.md
+git commit -m "Initial commit"
+git remote add origin https://github.com/username/repository.git
+git branch -M master
+git push -u origin master
+type nul > 1.txt
+type nul > 2.txt
+git add .
+git commit -m "Added files"
+git push
+git checkout -b MITS
+git push -u origin MITS
+git checkout master
+git checkout MITS
+git status
+git branch
+
+
+3.3)git log
+git log --oneline
+
+3.4)git clone “githib repository url”
+
+3.5)git add .
+git commit -m "Updated files"
+git push origin main
+
