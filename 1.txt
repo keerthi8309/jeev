@@ -20,6 +20,24 @@ jobs:
         run: python main.py
 
 
+git init
+mkdir.github
+mkdir workflows
+cd workflows
+type nul>bsr.yml
+cd..
+git remote add origin "url"
+git config --global user.name " "
+git config --global user.email " "
+git add .
+git commit -m "add"
+git branch -M main
+git push -u origin main
+git push 
+git pull
+
+
+
 3.2)git init
 echo "# My Git Repository" > README.md
 git add README.md
